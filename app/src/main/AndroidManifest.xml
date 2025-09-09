@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ToDoList">
         <activity
+            android:name=".item_task"
+            android:exported="false" />
+        <activity
+            android:name=".activity_update_task"
+            android:exported="false" />
+        <activity
+            android:name=".activity_create_task"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
