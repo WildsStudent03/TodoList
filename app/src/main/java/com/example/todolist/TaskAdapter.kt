@@ -29,13 +29,13 @@ class TaskAdapter(private val tasks: List<Task>) : RecyclerView.Adapter<TaskAdap
         holder.tvDescription.text = task.description
         holder.checkBoxDone.isChecked = task.isDone
 
-        // ✅ Checklist listener
+
         holder.checkBoxDone.setOnCheckedChangeListener { _, isChecked ->
             task.isDone = isChecked
             // TODO: simpan ke database biar persistent
         }
 
-        // ✅ Klik item → buka Update Activity
+
         holder.itemView.setOnClickListener {
             val context = holder.itemView.context
             val intent = Intent(context, activity_update_task::class.java).apply {
