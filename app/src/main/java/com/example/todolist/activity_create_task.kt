@@ -25,10 +25,10 @@ class activity_create_task : AppCompatActivity() {
 
             if (title.isNotEmpty()) {
                 db.insertTask(Task(title = title, description = desc))
-                Toast.makeText(this, "Task Saved", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "TUGAS TERSIMPAN", Toast.LENGTH_SHORT).show()
                 finish()
             } else {
-                Toast.makeText(this, "Title cannot be empty", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "JUDUL JANGAN KOSONG YA 😊", Toast.LENGTH_SHORT).show()
             }
         }
     }

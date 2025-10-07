@@ -21,7 +21,6 @@ class activity_update_task : AppCompatActivity() {
         val btnUpdate = findViewById<Button>(R.id.btnUpdate)
         val btnDelete = findViewById<Button>(R.id.btnDelete)
 
-        // Ambil data dari intent
         taskId = intent.getIntExtra("taskId", 0)
         etTitle.setText(intent.getStringExtra("taskTitle"))
         etDesc.setText(intent.getStringExtra("taskDesc"))

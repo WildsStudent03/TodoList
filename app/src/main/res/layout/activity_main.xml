@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <!-- Daftar Task -->
+    <!-- WILDS XD-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTasks"
         android:layout_width="match_parent"
@@ -14,7 +14,6 @@
         android:clipToPadding="false"
         android:layout_above="@+id/btnAddTask"/>
 
-    <!-- Tombol Tambah -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btnAddTask"
         android:layout_width="wrap_content"
